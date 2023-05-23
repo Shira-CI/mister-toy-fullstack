@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Buzz Lightyear",
+    "price": 123,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true,
+    "_id": "u101"
+  },
+  {
+    "title": "asedrft",
+    "price": 158,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": 1631099274372,
+    "inStock": true,
+    "_id": "u102"
+  },
+  {
+    "title": "Giggling 77",
+    "price": 68,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": 1631115098246,
+    "inStock": true,
+    "_id": "u103"
+  },
+  {
+    "title": "RC Race Car",
+    "price": 75,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": 1631102115584,
+    "inStock": false,
+    "_id": "u104"
+  },
+  {
+    "title": "Stacking Rings",
+    "price": 59,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": 1631107412719,
+    "inStock": false,
+    "_id": "u105"
+  },
+  {
+    "title": "Buzz ",
+    "price": 123,
+    "_id": "1v08U"
+  },
+  {
+    "title": "hhh",
+    "price": 123,
+    "_id": "THsxF"
+  },
+  {
+    "title": "Buzz Lightyearccc",
+    "price": 123,
+    "_id": "GAz09"
+  }
+]
