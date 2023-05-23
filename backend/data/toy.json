@@ -11,7 +11,7 @@
     "_id": "u101"
   },
   {
-    "title": "asedrft",
+    "title": "777",
     "price": 158,
     "labels": [
       "Doll",
@@ -68,5 +68,13 @@
     "title": "Buzz Lightyearccc",
     "price": 123,
     "_id": "GAz09"
+  },
+  {
+    "title": "hkhkhk",
+    "price": 76,
+    "labels": [],
+    "createdAt": 1684868246101,
+    "inStock": true,
+    "_id": "3cfpc"
   }
 ]
