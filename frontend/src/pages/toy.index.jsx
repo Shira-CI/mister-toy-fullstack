@@ -51,12 +51,16 @@ export function ToyIndex() {
 
     return (
         <section>
-            <h3>Toys App</h3>
             <main>
-                <Link to={`/toy/edit`}>Add Toy</Link>
-                <ToyFilter onSetFilter={onSetFilter} />
 
-                <button onClick={onAddToy}>Add random Toy </button>
+            <section className='toys-filter-container'>
+                <ToyFilter onSetFilter={onSetFilter} />
+                <button className='add-toy-btn'>
+
+                <Link to={`/toy/edit`}>Add Toy</Link>
+                </button>
+                {/* <button onClick={onAddToy}>Add random Toy </button> */}
+            </section>
 
                 {isLoading && <h4>Loading...</h4>}
 

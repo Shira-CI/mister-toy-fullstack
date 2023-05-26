@@ -36,10 +36,9 @@ export function ToyFilter({ onSetFilter }) {
     }
 
 
-    return <section className="toy-filter full main-layout">
-        <h2>Toys Filter</h2>
+    return <section className="toy-filter">
+            <h3>Filter By:</h3>
         <form onSubmit={onSubmitFilter}>
-
             <label htmlFor="title">Name:</label>
             <input type="text"
                 id="title"
@@ -59,7 +58,7 @@ export function ToyFilter({ onSetFilter }) {
                 onChange={handleChange}
             />
 
-            <button >Filter</button>
+            {/* <button >Filter</button> */}
         </form>
 
     </section>

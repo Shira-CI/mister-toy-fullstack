@@ -1,11 +1,17 @@
 .toy-preview {
     text-align: center;
     padding: 0.3em;
+    background-color: $clr3;
     display: flex;
     flex-direction: column;
-
-    background-color: antiquewhite;
+    justify-content: space-around;
+    margin: 0.5em;
+    width: 25vh;
+    height: 30vh;
+    box-shadow: 10px 10px 25px 0 rgba(132, 141, 152, 0.18);
+    border-radius: 20%;
 }
+
 .toy-preview h4{
     text-transform: capitalize;
     color: black;

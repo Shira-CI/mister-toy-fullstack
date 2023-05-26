@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 
+
 export function ToyPreview({ toy }) {
     return <article>
         <h4>{toy.title}</h4>
+        <img src= {toy.image} alt="" />
+       
         <p>Price: <span>{toy.price}$</span></p>
         {toy.inStock && <span>Toy available</span>}
 

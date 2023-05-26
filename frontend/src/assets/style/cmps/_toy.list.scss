@@ -2,14 +2,11 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.toy-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: var(--clr1bg);
-    margin: 0.5em;
-    width: 30vh;
-    height: 30vh;
-}
+// .toy-list li {
+  
+// }
