@@ -67,13 +67,14 @@ app.put('/api/toy', (req, res) => {
     // if (!loggedinUser) return res.status(401).send('Cannot add toy')
 
     console.log(req.body)
-    const { title, price, _id, labels, createdAt } = req.body
+    const { title, price, _id, labels, createdAt, inStock } = req.body
     const toy = {
         title,
         price: +price,
         _id,
         labels,
-        createdAt
+        createdAt,
+        inStock
     }
 
     toyService.save(toy)  //add loggedinUser

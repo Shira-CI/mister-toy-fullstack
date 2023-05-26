@@ -1,6 +1,6 @@
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import './assets/style/main.css';
+import './assets/style/main.scss';
 
 import { store } from './store/store';
 import { HomePage } from './pages/home.page';
@@ -28,7 +28,7 @@ export default function App() {
 
                         </Routes>
                     </main>
-                    <AppFooter />
+                    {/* <AppFooter /> */}
                 </section>
             </Router>
         </Provider>

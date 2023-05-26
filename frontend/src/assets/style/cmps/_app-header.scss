@@ -1,0 +1,23 @@
+.app-header {
+  display: grid;
+  grid-template-columns: $layoutPadding 1fr $layoutPadding;
+  grid-template-rows: $layoutPadding 1fr $layoutPadding;
+  height: fit-content;
+
+  nav {
+    height: 8vh;
+    width: 30%;
+    background-color: $clr3;
+    position: relative;
+    border-radius: 2em;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 10px;
+  }
+
+
+}

@@ -29,6 +29,7 @@ export function GoogleMap() {
         <button onClick={()=> handleClick(BatYam)}>Bat Yam</button>
         <button onClick={()=> handleClick(Hadera)}>Hadera</button>
         <button onClick={()=> handleClick(TelAviv)}>Tel Aviv</button>
+        
         <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: "AIzaSyAzbcR88FFMA9WmJkJDHbCXL9UaeLA9X9c" }}
