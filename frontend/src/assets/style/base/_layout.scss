@@ -42,4 +42,7 @@ footer {
   @include for-wide-layout {
       @include layoutGTC($break-wide);
   }
+  @include for-wide-layout {
+      @include layoutGTC($break-extra-wide);
+  }
 }

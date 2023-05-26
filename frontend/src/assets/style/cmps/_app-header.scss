@@ -19,5 +19,19 @@
     gap: 10px;
   }
 
+  @include for-mobile-layout {
+    // width: 25em;
+    // height: 30em;
+    nav{
+      width: 70%;
+      margin: auto;
+    }
+    
+  }
+  @include for-narrow-layout {
+    nav{
 
+      width: 40%;
+    }
+  }
 }

@@ -1,41 +1,88 @@
-.toys-filter-container{
-    display:flex;
-    justify-content: space-between;
+.toys-filter-container {
+    // display:flex;
+    // justify-content: space-between;
 
-    button.add-toy-btn{
-        background-color:#f0416a;
+    button.add-toy-btn {
+        background-color: $clr6 ;
         // border: 2px solid rgb(255, 152, 152);
         border-radius: 50%;
         width: 4em;
         height: 4em;
-        align-self: flex-end;
         font-size: 1rem;
         text-align: center;
-
     }
 
-}
 
-.toy-filter{
-    align-self: center;
-    // display: flex;
-    // width: 60%;
-    
-    h3{
-        font-size: 1.5em;
-    }
-    
-    form{
-        // background-color: #f0416a;
+    .toy-filter {
+        align-self: center;
         display: flex;
-        justify-content: space-around;
-        gap: 10px;
-        align-items: center;
+        // width: 60%;
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        form {
+            // background-color: #f0416a;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            align-items: center;
 
 
-        input{
-            height: 60%;
+            input {
+                // height: 60%;
+            }
         }
     }
-    
+
+
+    @include for-mobile-layout {
+        @media (max-width: $break-mobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .toy-filter {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                form {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                input{
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    @include for-narrow-layout {
+        @media (min-width: $break-narrow) {
+            display: flex;
+            justify-content: space-between;
+
+            button.add-toy-btn {
+                align-self: flex-end;
+
+            }
+
+
+        }
+    }
+
+    @include for-normal-layout {
+        @media (min-width: $break-normal) {}
+    }
+
+    @include for-wide-layout {
+        @media (min-width: $break-wide) {}
+    }
+
+
+
 }

@@ -8,15 +8,17 @@ $clr2: #fff8f8;
 $clr3: #dee5f0;
 $clr4: rgb(232, 241, 238);
 $clr5: aliceblue;
-$clr6: rgb(245, 123, 143);
+$clr6: #f0416a;
 
 // LAYOUT
 $layoutPadding: 20px;
 
 // LAYOUT BREAKPOINTS
-$break-narrow: 1200px;
-$break-normal: 1360px;
-$break-wide: 1920px;
+$break-mobile: 640px;
+$break-narrow: 640px;
+$break-normal: 640px;
+$break-wide: 900px;
+$break-extra-wide: 1200px;
 
 $padded-break-narrow: $break-narrow + $layoutPadding * 2;
 $padded-break-normal: $break-normal + $layoutPadding * 2;

@@ -1,12 +1,43 @@
 .toy-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
     gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    
+    
+ 
+    @include for-mobile-layout {
+        @media (max-width: $break-mobile) {
+            grid-template-columns: 1fr;
+            gap:20px;
+        }
+      }
+      
+    //   @include for-narrow-layout {
+    //     @media (min-width: $break-narrow) {
+    //         grid-template-columns: repeat(2 , 1fr);
+    //     }
+    // }
+    
+    @include for-normal-layout {
+        @media (min-width: $break-normal) {
+            grid-template-columns: repeat(2 , 1fr);
+
+        }
+    }
+    
+    @include for-wide-layout {
+        @media (min-width: $break-wide) {
+            grid-template-columns: repeat(3 , 1fr);
+        }
+}
+    @include for-extra-wide-layout {
+        @media (min-width: $break-extra-wide) {
+            grid-template-columns: repeat(4 , 1fr);
+        }
 }
 
-// .toy-list li {
-  
-// }
+
+}
