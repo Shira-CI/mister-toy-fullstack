@@ -1,7 +1,8 @@
 const fs = require('fs')
 var toys = require('../data/toy.json')
 
-function query(filterBy = {}) {
+function query(filterBy = {}, sortBy) {
+    console.log(sortBy)
     let toysToDisplay = toys
     if (filterBy.title) {
         const regExp = new RegExp(filterBy.title, 'i')
@@ -10,6 +11,20 @@ function query(filterBy = {}) {
 
     if (filterBy.maxPrice) {
         toysToDisplay = toysToDisplay.filter(toy => toy.price <= filterBy.maxPrice)
+    }
+
+    if (filterBy.inStock) {
+        if (filterBy.inStock === 'all') toysToDisplay = toys
+        else if (filterBy.inStock === 'inStock') toysToDisplay = toys.filter(toy => toy.inStock)
+        else toysToDisplay = toys.filter(toy => !toy.inStock)
+    }
+
+    if (filterBy.label && filterBy.label.length > 0) {
+        if (filterBy.label === 'all') toysToDisplay = toys
+        else {
+
+            toysToDisplay = toysToDisplay.filter(toy => toy.labels.every(l => toy.labels.includes(filterBy.label)))
+        }
     }
 
     return Promise.resolve(toysToDisplay)
@@ -37,8 +52,8 @@ function save(toy, loggedinUser) {
         // if (toyToUpdate.owner._id !== loggedinUser._id) return Promise.reject('Not your toy')
         toyToUpdate.title = toy.title
         toyToUpdate.price = toy.price
-        // toyToUpdate.inStock = toy.inStock
-        // toyToUpdate.labels = [...toy.labels]
+        toyToUpdate.inStock = toy.inStock
+        toyToUpdate.labels = [...toy.labels]
 
     } else {
         toy._id = _makeId()

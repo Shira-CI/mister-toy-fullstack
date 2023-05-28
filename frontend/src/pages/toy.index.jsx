@@ -7,20 +7,22 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { loadToys, removeToy, saveToy } from "../store/toy.action"
 import { ToyList } from "../cmps/toy.list"
 import { ToyFilter } from "../cmps/toy.filter"
-
+import { ToySort } from '../cmps/toy-sort'
 
 
 export function ToyIndex() {
 
     const dispatch = useDispatch()
     const [filterBy, setFilterBy] = useState(toyService.getDefaultFilter())
+    const [sortBy, setSortBy] = useState({ type: '', desc: 1 })
+
     const toys = useSelector((storeState) => storeState.toyModule.toys)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
     // console.log(toys)
 
     useEffect(() => {
-        loadToys(filterBy)
-    }, [filterBy])
+        loadToys(filterBy , sortBy)
+    }, [filterBy , sortBy])
 
     function onRemoveToy(toyId) {
         removeToy(toyId)
@@ -50,16 +52,17 @@ export function ToyIndex() {
     }
 
     return (
-        <section>
-            <main>
+            <section className='index-container'>
 
             <section className='toys-filter-container'>
                 <ToyFilter onSetFilter={onSetFilter} />
-                <button className='add-toy-btn'>
+                <ToySort sortBy={sortBy} setSortBy={setSortBy} />
 
+
+
+                <button className='add-toy-btn'>
                 <Link to={`/toy/edit`}>Add Toy</Link>
                 </button>
-                {/* <button onClick={onAddToy}>Add random Toy </button> */}
             </section>
 
                 {isLoading && <h4>Loading...</h4>}
@@ -68,8 +71,7 @@ export function ToyIndex() {
               toys={toys}
               onRemoveToy={onRemoveToy}
               />
-            </main>
-        </section>
+            </section>
     )
 
 

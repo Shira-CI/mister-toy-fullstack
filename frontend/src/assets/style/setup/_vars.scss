@@ -4,9 +4,9 @@
 $clr-2: #2d2d2d;
 $clr-1: #171515;
 $clr1: #000;
-$clr2: #fff8f8;
-$clr3: #dee5f0;
-$clr4: rgb(232, 241, 238);
+$clr2: #e3dada;
+$clr3: #eaedf3;
+$clr4: rgb(239, 239, 239);
 $clr5: aliceblue;
 $clr6: #f0416a;
 
@@ -16,9 +16,9 @@ $layoutPadding: 20px;
 // LAYOUT BREAKPOINTS
 $break-mobile: 640px;
 $break-narrow: 640px;
-$break-normal: 640px;
-$break-wide: 900px;
-$break-extra-wide: 1200px;
+$break-normal: 900px;
+$break-wide: 1100px;
+$break-extra-wide: 1400px;
 
 $padded-break-narrow: $break-narrow + $layoutPadding * 2;
 $padded-break-normal: $break-normal + $layoutPadding * 2;

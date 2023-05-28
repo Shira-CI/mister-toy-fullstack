@@ -23,9 +23,10 @@ let gToys
 // _createToys()
 
 
-function query(filterBy = {}) {
+function query(filterBy = {} , sortBy) {
+    console.log(sortBy)
     // return storageService.query(STORAGE_KEY).then(toys => toys)
-    return httpService.get(BASE_URL, filterBy)
+    return httpService.get(BASE_URL, filterBy , sortBy)
 }
 
 function getById(toyId) {
@@ -38,7 +39,7 @@ function remove(toyId) {
 }
 
 function save(toy) {
-    console.log(toy)
+    // console.log(toy)
     const method = (toy._id) ? 'put' : 'post'
     return httpService[method](BASE_URL, toy)
 
@@ -53,7 +54,7 @@ function save(toy) {
 function getEmptyToy() {
     return {
         title:'',
-        price: utilService.getRandomIntInclusive(50 , 150),
+        price: '',
         labels: [],
         createdAt: Date.now(),
         inStock: true
@@ -61,7 +62,7 @@ function getEmptyToy() {
 }
 
 function getDefaultFilter() {
-    return { title: '', maxPrice: ''}
+    return { name: '', maxPrice: '', inStock: '', labels: '' }
 }
 
 

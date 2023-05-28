@@ -1,11 +1,12 @@
 const express = require('express')
-const app = express()
-const toyService = require('./services/toy.service')
-// const userService = require('./services/user.service')
 const cookieParser = require('cookie-parser')
-const path = require('path')
 const cors = require('cors')
+const path = require('path')
+const app = express()
+
+const toyService = require('./services/toy.service')
 const labelService = require('./services/label.service')
+// const userService = require('./services/user.service')
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'public')))
@@ -30,13 +31,13 @@ if (process.env.NODE_ENV === 'production') {
 
 // app.use(cors(corsOptions))
 // app.use(express.static('public'))
+
 app.use(cookieParser()) // for res.cookies
 app.use(express.json()) // for req.body
 
 // **************** label API ****************:
 // List
 app.get('/api/label', (req, res) => {
-    // TODO: get sortBy too
     labelService.query()
         .then(labels => {
             res.send(labels)
@@ -50,6 +51,7 @@ app.get('/api/label', (req, res) => {
 // **************** Toys API ****************:
 // List
 app.get('/api/toy', (req, res) => {
+    // console.log(req.query)
     const filterBy = req.query
     toyService.query(filterBy)
         .then(toys => {

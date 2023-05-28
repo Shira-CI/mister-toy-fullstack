@@ -17,7 +17,7 @@ export default function App() {
             <Router>
                 <section className="main-layout app">
                     <AppHeader />
-                    <main>
+                    <main className='main-app'>
                         <Routes>
                             <Route element={<HomePage />} path="/" />
                             <Route element={<About />} path="/about" />
@@ -28,7 +28,7 @@ export default function App() {
 
                         </Routes>
                     </main>
-                    {/* <AppFooter /> */}
+                    <AppFooter />
                 </section>
             </Router>
         </Provider>

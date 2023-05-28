@@ -1,37 +1,14 @@
 [
   {
-    "title": "ZephyrZoo",
-    "price": 123,
-    "labels": [
-      "Doll",
-      "Battery Powered"
-    ],
-    "createdAt": 1631031801011,
-    "inStock": true,
-    "_id": "u101",
-    "image": "https://images.unsplash.com/photo-1558679908-541bcf1249ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-  },
-  {
-    "title": "WhimsiBlocks",
-    "price": 158,
-    "labels": [
-      "Doll",
-      "Battery Powered"
-    ],
-    "createdAt": 1631099274372,
-    "inStock": true,
-    "_id": "u102",
-    "image": "https://images.unsplash.com/photo-1529016011223-8ee9873aef1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=715&q=80"
-  },
-  {
     "title": "Quirkatron",
     "price": 68,
     "labels": [
       "Doll",
-      "Battery Powered"
+      "Battery Powered",
+      "Box game"
     ],
     "createdAt": 1631115098246,
-    "inStock": true,
+    "inStock": false,
     "_id": "u103",
     "image": "https://images.unsplash.com/photo-1630453228219-13c0a4de0e99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
   },
@@ -43,7 +20,7 @@
       "Battery Powered"
     ],
     "createdAt": 1631102115584,
-    "inStock": false,
+    "inStock": true,
     "_id": "u104",
     "image": "https://images.unsplash.com/photo-1565207192576-ce763be7da44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
   },
@@ -60,9 +37,18 @@
     "image": "https://images.unsplash.com/photo-1615486363990-dff6c0722a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
   },
   {
-    "title": "KaleidoKritters",
+    "title": "K",
     "price": 76,
-    "labels": [],
+    "labels": [
+      "Baby",
+      "Battery Powered",
+      "Outdoor",
+      "Puzzle",
+      "Doll",
+      "Art",
+      "Box game",
+      "On wheels"
+    ],
     "createdAt": 1684868246101,
     "inStock": true,
     "_id": "u106",
@@ -71,7 +57,9 @@
   {
     "title": "PuzzloSphere",
     "price": 76,
-    "labels": [],
+    "labels": [
+      "Puzzle"
+    ],
     "createdAt": 1684868246101,
     "inStock": true,
     "_id": "u107",
@@ -80,7 +68,9 @@
   {
     "title": "LumiLoops",
     "price": 76,
-    "labels": [],
+    "labels": [
+      "Puzzle"
+    ],
     "createdAt": 1684868246101,
     "inStock": true,
     "_id": "u108",
@@ -89,7 +79,9 @@
   {
     "title": "QuirkyQuest",
     "price": 76,
-    "labels": [],
+    "labels": [
+      "Doll"
+    ],
     "createdAt": 1684868246101,
     "inStock": true,
     "_id": "u109",
@@ -98,11 +90,12 @@
   {
     "title": "JumbleJamboree",
     "price": 76,
-    "labels": [],
+    "labels": [
+      "Baby"
+    ],
     "createdAt": 1684868246101,
-    "inStock": true,
+    "inStock": false,
     "_id": "u110",
     "image": "https://images.unsplash.com/photo-1561074666-aa94bbcda3d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc0fHx0b3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
   }
-
 ]

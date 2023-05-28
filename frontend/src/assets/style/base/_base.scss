@@ -6,16 +6,11 @@ html {
   font-family: Bahnschrift;
 }
 
-main{
-  max-width: 100vw;
-}
-
 body {
   margin: 0;
   background-color: $clr5;
-  height: 100vh;
+  // height: 100vh;
 }
-
 
 p {
   margin: 0 0 1em;
@@ -37,6 +32,10 @@ object {
 
 img {
   width: 100%;
+}
+
+.red {
+  color: red;
 }
 
 

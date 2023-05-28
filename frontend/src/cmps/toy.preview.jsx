@@ -9,7 +9,8 @@ export function ToyPreview({ toy, onRemoveToy }) {
             <img src={toy.image} alt="" />
 
             <p>Price: <span>{toy.price}$</span></p>
-            {toy.inStock && <span>Toy available</span>}
+            {toy.inStock && <span className="toy-available">Toy Available</span>}
+            {!toy.inStock && <span className="toy-available">Toy Unavailable</span>}
             </Link>
             <section>
                 <button> <Link to={`/toy/edit/${toy._id}`}>Edit</Link> </button>

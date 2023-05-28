@@ -1,28 +1,21 @@
 .toy-preview-container {
     text-align: center;
     padding: 0.5em;
-    background-color: $clr3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    // align-items: center;
     margin: 0.5em;
-
-    box-shadow: 10px 10px 25px 0 rgba(132, 141, 152, 0.18);
+    box-shadow: 10px 10px 25px 0 rgba(153, 166, 182, 0.42);
     border-radius: 20%;
+    height: 45vh;
+    width: 100%;
 
-    .toy-preview {
-        height: 100%;
-    }
-
-    .details-a-link {
+    .toy-preview{
         height: 100%;
     }
 
     button {
         background-color: $clr6;
         border-radius: 10%;
-
     }
 
     h4 {
@@ -31,42 +24,41 @@
     }
 
     img {
-        width: 65%;
-        height: 65%;
         border-radius: 10%;
         object-fit: cover;
         margin: 5px;
     }
 
-    @include for-mobile-layout {
-        width: 25em;
-        height: 30em;
+    .toy-available{
+        font-size: 0.8em;
     }
 
-    @include for-narrow-layout {}
 
-    @include for-normal-layout {}
+    @include for-mobile-layout {
+        
+        img{
+            width: 90%;
+            height: 70%;
+        }
+       
+    }
+
+    @include for-narrow-layout {
+        img{
+            width: 95%;
+            height: 50%;
+        }
+    }
+
+    @include for-normal-layout {
+
+    }
 
     @include for-wide-layout {
-        width: 15em;
-        height: 25em;
+      
     }
 
     @include for-wide-layout {}
 
 
-
-
-
-
-
 }
-
-// .toy-preview h4{
-//     text-transform: capitalize;
-//     color: black;
-// }
-
-// .toy-preview img {
-//     max-width: 100px;
-// }

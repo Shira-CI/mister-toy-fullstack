@@ -1,9 +1,9 @@
 
-.container {
-  max-width: 800px;
-  padding: 1em;
-  margin: auto;
-}
+// .container {
+//   max-width: 800px;
+//   padding: 1em;
+//   margin: auto;
+// }
 
 footer {
   background-color: var(--clr1);
@@ -16,9 +16,11 @@ footer {
 .main-layout {
   display: grid;
   grid-template-columns: $layoutPadding 1fr $layoutPadding;
+  grid-template-rows: 150px 1fr 150px;
 
   > * {
       grid-column: 2;
+      // grid-row: 2;
   }
 
   > *.full {

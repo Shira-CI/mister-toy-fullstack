@@ -4,9 +4,9 @@ import { ADD_TOY, REMOVE_TOY, SET_TOYS, SET_IS_LOADING, UPDATE_TOY } from './toy
 
 
 
-export function loadToys(filterBy) {
+export function loadToys(filterBy , sortBy) {
     store.dispatch({ type: SET_IS_LOADING, isLoading: true })
-    return toyService.query(filterBy)
+    return toyService.query(filterBy , sortBy)
         .then((toys) => {
             store.dispatch({ type: SET_TOYS, toys })
         })

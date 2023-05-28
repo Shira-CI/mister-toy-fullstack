@@ -32,9 +32,9 @@ export function ToyDetails() {
         <h3>Price: ${toy.price}</h3>
         <h3>Created at: {toy.createdAt}</h3>
         <h3>{inventory}</h3>
-        <section> 
-            {toy.labels.map((label , idx) =>
-                <small key={label+idx} >{label} | </small> 
+        <section>
+            {toy.labels.map((label, idx) =>
+                <small key={label + idx} >{label} | </small>
             )}
         </section>
         <button onClick={() => navigate('/toy')}> Back </button>
@@ -43,7 +43,3 @@ export function ToyDetails() {
     </section>
 }
 
-// details::::
-// labels: ['Doll', 'Battery Powered', 'Baby'],
-// createdAt: Date.now(),
-// inStock: true

@@ -1,43 +1,44 @@
 .toy-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: grid;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
-    justify-items: center;
-    width: 100%;
-    
-    
- 
+    list-style-position: inside;
+
+
     @include for-mobile-layout {
         @media (max-width: $break-mobile) {
             grid-template-columns: 1fr;
-            gap:20px;
+            gap: 20px;
         }
-      }
-      
-    //   @include for-narrow-layout {
-    //     @media (min-width: $break-narrow) {
-    //         grid-template-columns: repeat(2 , 1fr);
-    //     }
-    // }
-    
+    }
+
+    @include for-narrow-layout {
+        @media (min-width: $break-narrow) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     @include for-normal-layout {
         @media (min-width: $break-normal) {
-            grid-template-columns: repeat(2 , 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
         }
     }
-    
+
     @include for-wide-layout {
         @media (min-width: $break-wide) {
-            grid-template-columns: repeat(3 , 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
-}
+    }
+
     @include for-extra-wide-layout {
         @media (min-width: $break-extra-wide) {
-            grid-template-columns: repeat(4 , 1fr);
+            grid-template-columns: repeat(5, 1fr);
         }
-}
+    }
 
 
 }
